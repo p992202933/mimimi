@@ -16,7 +16,7 @@ a{
     height: 120px;
 
 }
-.bonner {
+.bonner a{
     background: url("../img/bonner.jpg") no-repeat center;
     height: 120px;
     display: block;
@@ -30,6 +30,11 @@ a{
     width: 1226px;
     height: 40px;
 }
+.main-nav{
+    overflow: hidden;
+    float: left;
+    overflow: hidden;
+}
 .main-nav li{
     float: left;
     height: 40px;
@@ -42,4 +47,31 @@ a{
 .main-nav span{
     color: #424242;
     margin:0 5px;
+}
+.user-info{
+    float: right;
+}
+.user-info li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.user-info a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.user-info span{
+    color: #424242;
+    margin: 0 5px
+;
+}
+.mi-logo{
+    height: 55px;
+    width: 55px;
+    margin: 20px 20px;
+}
+.mi-logo a{
+    height: 55px;
+    background: #ff6700 url("../img/mi-logo.png") no-repeat center;
+    display: block;
 }
