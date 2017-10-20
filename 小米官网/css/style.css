@@ -23,12 +23,12 @@ a{
 }
 .nav{
     background: #333333;
-
+    height: 40px;
 }
 .wrapper{
     margin:0 auto;
     width: 1226px;
-    height: 40px;
+
 }
 .main-nav{
     overflow: hidden;
@@ -123,7 +123,7 @@ a{
 }
 .header{
     height: 100px;
-
+    position: relative;
 }
 .mi-logo{
 
@@ -142,8 +142,7 @@ a{
 }
 .menu-item {
     float: left;
-    height: 100px;
-    line-height: 100px;
+  padding: 42px 0;
 }
 .menu-item a{
     font-size: 16px;
@@ -156,4 +155,14 @@ a{
 }
 .menu-item:hover a{
     color: #ff6700;
+}
+
+.sub-menu{
+
+    background: red ;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 100%;
+
 }
