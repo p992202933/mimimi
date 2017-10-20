@@ -72,16 +72,7 @@ a{
     color: white;
 }
 
-.mi-logo{
-    height: 55px;
-    width: 55px;
-    margin: 20px 20px;
-}
-.mi-logo a{
-    height: 55px;
-    background: #ff6700 url("../img/mi-logo.png") no-repeat center;
-    display: block;
-}
+
 .iconfont{
     font-size: 20px;
     color: aqua;
@@ -123,10 +114,46 @@ a{
 }
 .user-info .cart:hover .cart-box{
     display: block;
-    animation: show 0.3s ease-in 1s forwards;
+    animation: show 0.15\s ease-in 0s forwards;
 }
 @keyframes  show {
     100%{
         height: 100px;
     }
+}
+.header{
+    height: 100px;
+
+}
+.mi-logo{
+
+    margin-top: 22px;
+    float: left;
+}
+.link-logo{
+    height: 55px;
+    width: 55px;
+    background: #ff6700 url("../img/mi-logo.png") no-repeat center center;
+    display: block;
+}
+.main-menu {
+ float: left;
+    margin-left:100px;
+}
+.menu-item {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
+.menu-item a{
+    font-size: 16px;
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    
+}
+.menu-item:hover a{
+    color: #ff6700;
 }
