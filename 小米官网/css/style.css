@@ -179,11 +179,15 @@ a{
     height: 50px;
     margin: 25px 0px 25px 1000px;
 }
-.menu1{
-    background: #000000;
-    width: 234px;
-    margin: -25px 0px 0px 25px;
 
+.menu1{
+    background: rgba(0,0,0,0.6);
+    width: 234px;
+    margin: -25px 0px 0px 0px;
+    position: relative;
+    height: 420px;
+    padding: 20px 0;
+    z-index: 2;
 }
 .menu1 li{
     height: 42px;
@@ -200,4 +204,347 @@ a{
 }
 .menu1 li:hover{
     background: #ff6700;
+}
+
+#control-photo{
+    width:200px;
+    height:20px;
+    float:right;
+    /*background:orange;*/
+    /*margin-bottom:20px;*/
+    position:relative;
+    top:-50px;
+    right:100px;
+    z-index:10;
+}
+#control-photo li{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+    text-align:center;
+    float:left;
+    border:1px solid white;
+}
+#right-photo-container{
+    width:1226px;
+    height:460px;
+    position:relative;
+    top:-480px;
+    left:0;
+    overflow:hidden;
+    /*background:red;*/
+    z-index:1;
+}
+#right-photo-container div{
+    display:none;
+}
+.right-photo{
+    /*此处要想淡入淡出就必须多个图片层叠在一起*/
+
+    /*图片的轮播三种：*/
+    /*隐藏了之后就空间释放了*/
+
+    /*要想淡入淡出就需要层叠在一起，*/
+
+    /*左右轮播时需要在同一列上*/
+    /*position:relative;*/
+    /*top:-460px;*/
+    /*left:0;*/
+    /*z-index:1;*/
+    /*display:none;*/
+
+}
+#control-photo .selected{
+    background:black;
+    color:white;
+}
+#right-photo-container .selected{
+    display:block;
+}
+#next-photo{
+    float:right;
+    width:50px;
+    height:50px;
+    /*background:white;*/
+    color:black;
+    position:relative;
+    top:-750px;
+    right:100px;
+    z-index:15;
+    font-size:50px;
+    text-align:center;
+    display:inline-block;
+    line-height:50px;
+    border:1px solid white;
+}
+#function{
+    overflow:hidden;
+
+    width: 100%;
+    height:170px;
+    position: absolute;
+    margin-top: -450px;
+}
+#function #little-coin{
+
+    display:inline-block;
+    margin-right:14px;
+    width:234px;
+    height:170px;
+    float: left;
+    background: #5f5750;
+
+
+}
+#function .function-img{
+    float: left;
+    text-align:center;
+    margin:0 auto;
+    margin-right:14px;
+    display:inline-block;
+}
+#function .function-img img{
+    max-width:100%;
+    max-height:100%;
+    /*让图片正常比例显示*/
+}
+/*little-coin 二级样式*/
+
+#little-coin li{
+    display:block;
+    width:76px;
+    height:82px;
+    float:left;
+    border:1px solid grey;
+    border-bottom:1px solid #5f5750;
+    /*此处不知为何与最外面li有间隙*/
+    /*margin:0 auto;*/
+
+}
+#little-coin a{
+    color:grey;
+    padding:8px 0;
+    text-align:center;
+    display:inline-block;
+    width:70px;
+    height:63px;
+    /*margin:0 auto;*/
+}
+#little-coin a:hover{
+    color:white;
+}
+#star-product{
+    height:438px;
+    width:100%;
+    margin-top: -300px;
+}
+#star-product-hb{
+    height:58px;
+    position:relative;
+}
+#star-product-hb h2 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+#div1{
+    width: 1170px;
+    height: 380px;
+    margin: 100px auto;
+    /*background-color: #646464;*/
+    position: relative;
+    overflow: hidden;
+}
+#div1 #ul1{
+    position:absolute;
+    left:0;
+    top:0;
+
+    /*overflow: hidden;*/
+    /*background-color: #3b7796;*/
+}
+
+#div1 #ul1 li{
+    /*margin-right:5px;*/
+    float: left;
+    width: 234px;
+    height: 340px;
+    list-style: none;
+    display:inline-block;
+    text-align:center;
+    border-top:1px solid red;
+}
+#div1 #ul1 .star-img{
+    width:160px;
+    height:160px;
+}
+#div1 #ul1 li img{
+    max-width:100%;
+    max-height:100%;
+}
+#ul1 .star-character{
+    color:#ff6700;
+}
+/*选择方向按钮*/
+#btn{
+    margin-top:50px;
+    /*float:right;*/
+    position:absolute;
+    top:60px;
+    right:90px;
+}
+#btn-icon1,#btn-icon2{
+    float:left;
+    position:relative;
+
+
+}
+#btn-icon1 #btn1,#btn2{
+    width:30px;
+    height:30px;
+    background:rgba(255,255,255,0.01);
+    position:absolute;
+    top:0;
+    right:0;
+    border:1px solid #e0e0e0;
+}
+#btn i{
+    font-size:30px;
+
+}
+#btn-icon1:hover i{
+    color:#ff6700;
+}
+#btn-icon2:hover i{
+    color:#ff6700;
+}
+#footer{
+    margin-top:100px;
+    width:100%;
+    height:272px;
+    background:white;
+}
+
+/*#footer-service内容*/
+#footer-service{
+    /*line-height:80px;*/
+    height:80px;
+    border-bottom:1px solid #e0e0e0;
+    /*padding:26px 0;*/
+    display:inline-block;
+    text-align:center;
+}
+#footer-service ul li{
+    float:left;
+    display:inline-block;
+    width:243px;
+    height:25px;
+    border-right:1px solid #e0e0e0;
+    text-align:center;
+    margin:26px 0;
+
+    /*line-height:25;*/
+}
+#footer-service .footer-clear-border{
+    border-right:1px solid white;
+}
+#footer-service ul li a{
+    text-align:center;
+    font-size:16px;
+    color:#333;
+}
+
+
+/*#footer-link内容*/
+/*小链接内容*/
+#footer-link{
+    height:192px;
+    padding:40px 0;
+}
+#footer-link .main-mu{
+    float:left;
+    width:160px;
+    height:112px;
+}
+#footer-link .text-word{
+    font-size:14px;
+    margin:-1px 0 26px;
+    line-height:1.25;
+    color:#424242;
+}
+#footer-link .foot-link{
+    font-size:12px;
+    color:#757575;
+    margin:10px 0 0;
+}
+/*左边客服内容*/
+#kefu-container{
+    border-left:1px solid #e0e0e0;
+    float:right;
+    width:252px;
+    height:112px;
+    display:inline-block;
+    text-align:center;
+    margin-left:17px;
+    margin-top: -115px ;
+}
+#phone-number{
+    font-size:22px;
+    margin:0 0 5px;
+    line-height:1;
+    color:#ff6700;
+}
+#service-hours{
+    font-size:12px;
+    margin:0 0 16px;
+    color:#616161;
+}
+#kefu-number{
+    font-size:14px;
+}
+#kefu-number a{
+    color:#ff6700;
+    padding:4px 4px;
+    border:1px solid #ff6700;
+}
+#kefu-number a:hover{
+    background:#ff6700;
+    color:white;
+}
+
+/*#info内容*/
+#info{
+    height:166px;
+    width:100%;
+    padding:30px 0;
+}
+#mi-logo-next-container{
+    display:inline-block;
+    margin-top:19px;
+    margin-left:20px;
+    float:left;
+}
+
+#mi-logo-next-container .top-nav-again,span{
+    float:left;
+    font-size:12px;
+}
+#mi-logo-next-container .top-nav-again a{
+    color:#757575;
+    padding:0 3px;
+}
+#mi-logo-next-container #info-information{
+    font-size:12px;
+    color:#b0b0b0;
+}
+#info .info-img{
+    margin-top:20px;
+    margin-left:30px;
+    float:left;
+    height:28px;
+    width:85px;
+}
+#info .info-img img{
+    max-height:100%;
+    max-width:100%;
 }
